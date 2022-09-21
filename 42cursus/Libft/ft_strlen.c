@@ -6,13 +6,13 @@
 /*   By: sde-sant <sde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 10:37:47 by sde-sant          #+#    #+#             */
-/*   Updated: 2022/09/16 11:01:49 by sde-sant         ###   ########.fr       */
+/*   Updated: 2022/09/21 20:23:59 by sde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	unsigned int	i;
 
