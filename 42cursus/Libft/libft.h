@@ -6,7 +6,7 @@
 /*   By: sde-sant <sde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 19:53:08 by sde-sant          #+#    #+#             */
-/*   Updated: 2022/09/21 21:25:34 by sde-sant         ###   ########.fr       */
+/*   Updated: 2022/09/22 20:56:59 by sde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
