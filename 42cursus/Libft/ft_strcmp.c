@@ -6,10 +6,22 @@
 /*   By: sde-sant <sde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 19:56:54 by sde-sant          #+#    #+#             */
-/*   Updated: 2022/09/21 21:15:12 by sde-sant         ###   ########.fr       */
+/*   Updated: 2022/09/22 10:32:46 by sde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	strcmp(const char *s1, const char *s2);
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	while (*s1 || *s2)
+	{
+		if (*s1 > *s2)
+			return (1);
+		else if (*s1 < *s2)
+			return (-1);
+		s1++;
+		s2++;
+	}
+	return (0);
+}
