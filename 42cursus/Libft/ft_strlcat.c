@@ -1,27 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sde-sant <sde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/21 19:56:54 by sde-sant          #+#    #+#             */
-/*   Updated: 2022/09/22 10:32:46 by sde-sant         ###   ########.fr       */
+/*   Created: 2022/12/05 12:56:33 by sde-sant          #+#    #+#             */
+/*   Updated: 2022/12/05 14:32:50 by sde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(const char *s1, const char *s2)
-{
-	while (*s1 || *s2)
-	{
-		if (*s1 > *s2)
-			return (1);
-		else if (*s1 < *s2)
-			return (-1);
-		s1++;
-		s2++;
-	}
-	return (0);
-}
+size_t	ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize);
