@@ -6,10 +6,23 @@
 /*   By: sde-sant <sde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 20:19:22 by sde-sant          #+#    #+#             */
-/*   Updated: 2022/09/21 21:21:43 by sde-sant         ###   ########.fr       */
+/*   Updated: 2022/12/06 12:58:00 by sde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str);
+int	ft_atoi(const char *str)
+{
+	int	res;
+	int	i;
+
+	res = 0;
+	i = 0;
+	while ((str[i] >= '0') && (str[i] <= '9'))
+	{
+		res = res * 10 + (str[i] - 48);
+		i++;
+	}
+	return (res);
+}
