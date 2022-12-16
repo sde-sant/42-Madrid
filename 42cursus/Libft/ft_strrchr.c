@@ -6,7 +6,7 @@
 /*   By: sde-sant <sde-sant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 10:37:47 by sde-sant          #+#    #+#             */
-/*   Updated: 2022/12/15 20:34:40 by sde-sant         ###   ########.fr       */
+/*   Updated: 2022/12/16 19:15:07 by sde-sant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,18 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	// char	chr;
-	int		i;
+	int	i;
 
-	i = sizeof(*s);
+	printf("%d", i);
 	while ((s[i] != c) || i >= 0)
 		i--;
 	if (i < 0)
 		return (NULL);
-	else
-	{
+	return (0);
+	// else
+	// {
 		
-	}
+	// }
 }
 
 int	main(void)
